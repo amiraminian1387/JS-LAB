@@ -13,7 +13,10 @@
 //     }
 // }
 
+
+
 // ---(versian 2)---  ---usage of number = 0,1,2,3,0---
+
 let flag = 0;
 
 function changeBackground() {
@@ -31,6 +34,25 @@ function changeBackground() {
         flag = 0;
     }
 }
+
+
+
+// ---(versian 3)---  ---variables(created with the help of AI)---
+
+// const images = [
+//   'janati.jpg',
+//   'kazem.jpg',
+//   'mohsen.jpg',
+//   'shamkhani.jpg',
+// ];
+
+// let index = 0;
+
+// function changeBackground() {
+//   document.body.style.backgroundImage = `url('${images[index]}')`;
+//   index = (index + 1) % images.length;
+// }
+
 
 
 
