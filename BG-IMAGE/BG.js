@@ -1,5 +1,5 @@
 
-// ---(versian 1)---  ---usage of boolean az my teacher used---
+// ---(versian 1)---  ---usage of boolean az my teacher used in class---
 
 // let flag = true;
 
@@ -15,7 +15,7 @@
 
 
 
-// ---(versian 2)---  ---usage of number = 0,1,2,3,0---
+// ---(versian 2)---  ---usage of number = 0,1,2,3,0 and adding more images---
 
 let flag = 0;
 
@@ -37,7 +37,7 @@ function changeBackground() {
 
 
 
-// ---(versian 3)---  ---variables(created with the help of AI)---
+// ---(versian 3)---  ---usage of variable (!! created with help of AI !!)---
 
 // const images = [
 //   'janati.jpg',
@@ -52,7 +52,9 @@ function changeBackground() {
 //   document.body.style.backgroundImage = `url('${images[index]}')`;
 //   index = (index + 1) % images.length;
 // }
+ 
 
+// the end of BG-IMAGE js 
 
 
 
