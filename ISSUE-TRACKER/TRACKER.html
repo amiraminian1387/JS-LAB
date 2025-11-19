@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <form>
-        <label for="textInput">task :</label>
-        <input type="text" id="textInput" name="textInput" placeholder="Write your task here...">
-        <label for="ISSUE">Select a status :</label>
-        <select id="ISSUE" name="ISSUE">
-            <option value="ToDo">To do</option>
-            <option value="progress">In progress</option>
-            <option value="done">It is done</option>
-        </select>
-        <input onclick="handleSubmit()" type="submit" value="SUBMIT">
-    </form>
+   <form onsubmit="handleSubmit()">
+    <input type="text" id="textInput" placeholder="Write your task here...">
+    <select id="ISSUES">
+        <option value="ToDo">To do</option>
+        <option value="progress">In progress</option>
+        <option value="done">Done</option>
+    </select>
+    <input type="submit" value="SUBMIT">
+</form>
+
+<h3>To Do</h3>
+<ul id="toDoList"></ul>
+
+<h3>In Progress</h3>
+<ul id="progressList"></ul>
+
+<h3>Done</h3>
+<ul id="doneList"></ul>
 </body>
 
 </html>

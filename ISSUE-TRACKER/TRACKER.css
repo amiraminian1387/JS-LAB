@@ -1,50 +1,89 @@
-body{
-    background-color: #c0ffc2;
+body {
+  background-color: #c0ffc2;
 }
-  form {
-    max-width: 320px;
-    margin: 10% auto;
-    padding: 15px;
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
 
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: 600;
-    color: #333;
-  }
+form {
+  max-width: 320px;
+  margin: 2% auto;
+  margin-bottom: 0;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-  input[type="text"], select {
-    width: 95%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    transition: border-color 0.3s;
-  }
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #333;
+}
 
-  input[type="text"]:focus, select:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
+input[type="text"],
+select {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
 
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(135deg, #4CAF50, #45a049);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
+input[type="text"]:focus,
+select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
 
-  input[type="submit"]:hover {
-    background: linear-gradient(135deg, #45a049, #3e8e41);
-  }
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #45a049, #3e8e41);
+}
+
+ul {
+  list-style-type: none;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  min-height: 50px;
+}
+
+#toDoList {
+  background-color: #f8d7da;
+  border: 2px solid #dc3545;
+  
+}
+
+#progressList {
+  background-color: #fff3cd;
+
+  border: 2px solid #ffc107;
+}
+
+#doneList {
+  background-color: #d4edda;
+  border: 2px solid #28a745;
+}
+
+ul li {
+  background: #ffffff;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.733);
+}
