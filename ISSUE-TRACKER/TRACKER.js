@@ -33,6 +33,5 @@ function handleSubmit() {
         return;
     }
 
-    // پاک کردن ورودی
-    input.value = "";
+   
 }
