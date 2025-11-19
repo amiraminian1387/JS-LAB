@@ -36,7 +36,7 @@ ul {
   list-style: none;
   padding: 0;
   margin-top: 15px;
-  background: linear-gradient(90deg, #ffffff, #bbdefb);
+ 
 }
 
 li {
@@ -44,6 +44,6 @@ li {
   padding: 8px 12px;
   margin-bottom: 6px;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.671);
   
 }
