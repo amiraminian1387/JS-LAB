@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISSUE TRACKER</title>
+    <link rel="stylesheet" href="TRACKER.css">
+    <script src="TRACKER.js"></script>
+</head>
+
+<body>
+    <form>
+        <label for="textInput">task :</label>
+        <input type="text" id="textInput" name="textInput" placeholder="Write your task here...">
+        <label for="ISSUE">Select a status :</label>
+        <select id="ISSUE" name="ISSUE">
+            <option value="ToDo">To do</option>
+            <option value="progress">In progress</option>
+            <option value="done">It is done</option>
+        </select>
+        <input onclick="handleSubmit()" type="submit" value="SUBMIT">
+    </form>
+</body>
+
+</html>
