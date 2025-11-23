@@ -1,11 +1,15 @@
 const divs = document.querySelectorAll('div');
 const h1 = document.querySelector('h1');
-const p = document.querySelector('p');
 const btn = document.querySelector('button');
 
 let count = 0;
 
 function makeRandomColor() {
+
+    if (this.clicked === true) {
+        return;
+    }
+
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
@@ -22,6 +26,7 @@ function makeRandomColor() {
     h1.style.color = randomColor;
     h1.style.transition = "all 0.3s ease-in-out";
 
+
     // count colored box
     // اگر این باکس هنوز کلاس selected ندارد، کلاس selected را اضافه کن
     // و چون یک باکس جدید انتخاب شده، شمارنده را یک واحد افزایش بده
@@ -36,9 +41,9 @@ function makeRandomColor() {
 
     // btn update
     btn.innerHTML = "box selecteds are : " + count;
+
+    this.clicked = true;
 }
-
-
 
 for (let index = 0; index < divs.length; index++) {
     divs[index].addEventListener("click", makeRandomColor);
