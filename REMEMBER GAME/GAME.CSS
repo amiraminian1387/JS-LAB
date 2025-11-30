@@ -34,3 +34,17 @@ i {
 div.show i {
     display: block !important;
 }
+
+.matched {
+    background: green;
+}
+
+.unmatched {
+    background: red;
+}
+
+
+.matched i,
+.unmatched i {
+    color: white;
+}
