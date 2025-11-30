@@ -1,0 +1,38 @@
+
+
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    gap: 16px;
+}
+
+
+section > div {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center
+ 
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0
+}
+
+
+i {
+    color: black;
+    font-size: 3rem;
+    display: none !important;
+}
+
