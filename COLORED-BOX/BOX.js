@@ -1,7 +1,9 @@
 const divs = document.querySelectorAll('div');
 const h1 = document.querySelector('h1');
 const btn = document.querySelector('button');
+const p = document.querySelector('#selectedBoxNumber');
 
+let numbers = "";
 let count = 0;
 
 function makeRandomColor() {
@@ -42,7 +44,12 @@ function makeRandomColor() {
     // btn update
     btn.innerHTML = "box selecteds are : " + count;
 
+    const num = this.querySelector('span').innerText;
+    numbers += num + ", ";
+    p.innerText = "Selected boxes number: " + numbers;
+
     this.clicked = true;
+
 }
 
 for (let index = 0; index < divs.length; index++) {
