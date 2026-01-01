@@ -1,4 +1,5 @@
 body {
+    background-color: rgb(126, 0, 105);
     margin: 0;
     overflow-x: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -6,14 +7,23 @@ body {
 }
 
 header {
-    display: flex;
-    background-color: rgba(232, 86, 245, 0.5);
-    align-items: center;
-    justify-content: space-around;
+    position: sticky;
+    top: 0;
     width: 100%;
-    padding: .5rem;
-
+    background-color: rgba(232, 86, 245, 0.719);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
+
+.removeheader {
+    /* /* display: none;  👇بجای اینکه کلا نمایش داده نشه، فقط محو میشه */
+    opacity: .5;
+    backdrop-filter: blur(10px);
+}
+
 
 h1 {
     animation: rotateIn 1s;
@@ -29,7 +39,7 @@ nav {
 a {
     text-decoration: none;
     color: rgb(255, 0, 212);
-    font-size: 1.2rem;
+    font-size: 2rem;
     transition: transform 0.3s, color 0.3s;
     animation: fadeIn 1s ease-out;
 }
@@ -63,12 +73,22 @@ a:hover {
         transform: rotate(0deg) scale(1);
     }
 }
-
-/* END header */
+/* END HEADER */
 
 /* START SECTION  */
 section {
-    height: 50vh;
+    height: 90vh;
+
+}
+
+div.container {
+    height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 3rem;
+    font-weight: 900;
+    font-size: larger;
+    text-align: center;
 }
 
 section:nth-child(even) {
@@ -76,5 +96,19 @@ section:nth-child(even) {
 }
 
 section:nth-child(odd) {
+    margin-bottom: 30rem;
     background: rgb(126, 0, 105);
+}
+
+p.purple {
+    margin: 0;
+    color: rgb(126, 0, 105);
+    animation: fadeIn 1s ease-out;
+
+}
+
+p.pink {
+    animation: fadeIn 3s ease-out;
+    display: flex;
+    color: rgb(255, 0, 212);
 }
